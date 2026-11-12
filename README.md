@@ -1,21 +1,21 @@
 # F1 Minimal API
 
-API de estudo em TypeScript e Fastify para consultar equipes e pilotos de Fórmula 1 a partir de uma coleção local.
+TypeScript and Fastify practice API for querying Formula 1 teams and drivers from a local collection.
 
-## Funcionalidades
+## Endpoints
 
-- GET /teams: lista equipes.
-- GET /teams/:id: consulta uma equipe.
-- GET /drivers: lista pilotos.
-- GET /drivers/:id: consulta um piloto.
+- GET /teams: lists teams.
+- GET /teams/:id: retrieves a team.
+- GET /drivers: lists drivers.
+- GET /drivers/:id: retrieves a driver.
 
-## Tecnologias
+## Technologies
 
-Node.js, TypeScript, Fastify, @fastify/cors, tsx e tsup.
+Node.js, TypeScript, Fastify, @fastify/cors, tsx and tsup.
 
-## Executar localmente
+## Run locally
 
-O script de desenvolvimento carrega um arquivo .env; mantenha esse arquivo local, mesmo vazio. O servidor usa a porta 3333 definida em src/server.ts.
+The development script loads a local .env file, which may be empty. The server uses port 3333 as defined in src/server.ts.
 
 ```bash
 git clone https://github.com/chruscinskiDiego/f1-minimal-api.git
@@ -24,7 +24,6 @@ npm ci
 npm run start:dev
 ```
 
-## Escopo e limitações
+## Scope and limitations
 
-Os registros são exemplos fixos em memória, não dados esportivos atualizados. Não há banco de dados, escrita de registros ou autenticação.
-
+Records are fixed in-memory examples, not current sports data. There is no database, write API or authentication.
